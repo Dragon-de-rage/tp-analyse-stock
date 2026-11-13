@@ -29,7 +29,13 @@ docker run --rm -v "$(pwd)/entrees:/entrees:ro" -v "$(pwd)/resultats:/resultats"
 ```
 
 ## Tests et résultats
-Renvoyer vers preuves/vérification.md et décrire le résultat attendu.
+À voir dans `preuves/verification.md`
+
+Résultats attendu : 
+
+- Build d'une image Docker appelée `analyse-stock:v1`
+
+- Au lancemant d'un container avec cette image : création sur la machine hôte d'un répertoire `/resultats/` contenant un fichier csv tel que formé par le script python
 
 ## Reproduction après git clone
 Dans le répertoire du projet :
@@ -50,5 +56,5 @@ ou pour Windows :
 docker run --rm -v "${PWD}/entrees:/entrees:ro" -v "${PWD}/resultats:/resultats" analyse-stock:v1
 ```
 
-Les résultats doivent avoir été créés dans `/resultats/` et s'être affichés dans le terminal.
+Les résultats seront créés dans `/resultats/` et affichés dans le terminal.
 
